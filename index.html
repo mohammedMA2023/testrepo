@@ -12,6 +12,8 @@
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <!-- Latest Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.2.3/css/bootstrap.min.css">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="assets/css/styles.css" rel="stylesheet" />
 </head>
@@ -27,7 +29,6 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto text-white font-weight-bold">
                     <h3><li class="nav-item"><a class="nav-link" href="#about">About</a></li></h3>
-
                     <h3><li class="nav-item"><a class="nav-link" href="#projects">Activities</a></li></h3>
                     <h3><li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li></h3>
                 </ul>
@@ -61,7 +62,7 @@
                     </p>
                 </div>
             </div>
-            <img width=100% height=auto class="img-fluid" src="assets/img/controller.jpg" alt="Image of a Xbox controller." />
+            <img width=100% height=auto class="img-fluid" src="assets/img/controller.jpg" alt="Image of an Xbox controller." />
             <br>
             <br>
             <br>
@@ -82,7 +83,7 @@
             </div>
             <!-- Project One Row-->
             <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6"><img src="assets/img/gametogether.jpg" alt="Two people sitting together and playing video games using XBOX 360 controllers" style="width: 100%; height: 100%;"/></div>
+                <div class="col-lg-6"><img src="assets/img/gametogether.jpg" alt="Two people sitting together and playing video games using Xbox 360 controllers" style="width: 100%; height: 100%;"/></div>
                 <div class="col-lg-6">
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
@@ -96,10 +97,7 @@
             </div>
             <!-- Project Two Row-->
             <div class="row gx-0 justify-content-center">
-                <div class="col-lg-6"><img src="assets/img/gamingboard.jpeg" alt="A leaderboard showing player names, scores, and levels." style="width: 100%; height: 100%;">
-
-
-</div>
+                <div class="col-lg-6"><img src="assets/img/gamingboard.jpeg" alt="A leaderboard showing player names, scores, and levels." style="width: 100%; height: 100%;"></div>
                 <div class="col-lg-6 order-lg-first">
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
@@ -152,7 +150,9 @@
                             <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                             <h4 class="text-uppercase m-0">Address</h4>
                             <hr class="my-4 mx-auto" />
-                            <div class="text-black font-weight-bold" style="font-size:17px">Shipley College. Victoria Road, Saltaire,<br> West Yorkshire, BD18 3LQ</div>
+                            <div class="text-black font-weight-bold" style="font-size:17px"><br>Shipley College, Exhibition Rd, Saltaire, Shipley BD18 3JW</div>
+                            <button class="btn btn-primary mt-3" id="openMapBtn">View Location</button>
+
                         </div>
                     </div>
                 </div>
@@ -172,9 +172,7 @@
                             <i class="fas fa-mobile-alt text-primary mb-2"></i>
                             <h4 class="text-uppercase m-0">Phone</h4>
                             <hr class="my-4 mx-auto" />
-                            <div class="text-muted text-decoration-none"><a href="tel:+4401274327222">Call us at 01274 327222</a>
-</div>
-
+                            <div class="text-muted text-decoration-none"><a href="tel:+4401274327222">Call us at 01274 327222</a></div>
                         </div>
                     </div>
                 </div>
@@ -187,11 +185,60 @@
         </div>
     </section>
     <!-- Footer-->
+    <div id="mapPopup" class="map-popup">
+    <div class="map-content">
+        <h2>Find Us Here</h2>
+        <div class="map-container">
+            <!-- Embed the Google Maps HTML here -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2354.3302160237336!2d-1.790938922993747!3d53.836990437898855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487be46a3f7a61ef%3A0x870d95b77afc3834!2sShipley%20College%20Exhibition%20Building!5e0!3m2!1sen!2suk!4v1694194798468!5m2!1sen!2suk" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Now that you know where we are, come join in on the fun!</p>
+        </div>
+        <button id="mapClose" class="close-button">Close</button>
+    </div>
+</div>
+
     <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">&copy; Games Club - Mohammed Bin Aamir, 2023</div></footer>
+    <!-- Popup modal -->
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <!-- JavaScript to open and close the map popup -->
+    <script>
+                // Function to open the map modal
+function openMapPopup() {
+    const mapPopup = document.querySelector('.map-popup');
+    const dimmerOverlay = document.querySelector('.dimmer-overlay');
+    const mainContent = document.querySelector('.main-content');
+    const body = document.body;
+
+    mapPopup.style.display = 'block';
+    dimmerOverlay.style.display = 'block';
+    mainContent.classList.add('no-scroll-main'); // Disable scrolling on the main content
+    body.classList.add('no-scroll'); // Disable scrolling on the body
+}
+
+// Function to close the map modal
+function closeMapPopup() {
+    const mapPopup = document.querySelector('.map-popup');
+    const dimmerOverlay = document.querySelector('.dimmer-overlay');
+    const mainContent = document.querySelector('.main-content');
+    const body = document.body;
+
+    mapPopup.style.display = 'none';
+    dimmerOverlay.style.display = 'none';
+    mainContent.classList.remove('no-scroll-main'); // Enable scrolling on the main content
+    body.classList.remove('no-scroll'); // Enable scrolling on the body
+}
+
+// Add event listener to the close button
+const closeButton = document.querySelector('.close-button');
+closeButton.addEventListener('click', closeMapPopup);
+
+// Optional: Add event listener to the "Open Map" button
+const openMapButton = document.getElementById('openMapBtn');
+openMapButton.addEventListener('click', openMapPopup);
+    </script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
