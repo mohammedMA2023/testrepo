@@ -1,20 +1,27 @@
-# Tobey's website for Project N
+# Mohammed's website for Project Testrepo
+
 
 ![amiresponsive](docs/amiresponsive.PNG)
 
-[View the deployed website here](https://shipleysteve.github.io/)
+[View the deployed website here](https://mohammedma2023.github.io/testrepo/)
+
 
 ## User Experience (UX)
 
 ### Initial Discussion
 
- The goal of the project N is to create a website for a local employer. Nicola would like a website to provide information on her services . The goal of this website is to give  our users a clear understanding of what  service are available and what she can do to help clients. My goal is to generate as many new clients as possible for Nicola.
+ The goal of the project N is to create a website for a local employer. Nicola would like a website to provide information on her services . The goal of this website is to give  our users a clear understanding of what  service are available and what she can do to help clients. My goal for this project was to make a responsive, professional and accessible website for a chosen club.
+I chose to make my site about a games club held in Shipley College.
+The site was then going to be hosted somewhere (github pages for now) and possibly given some backend code.
+This would help develop my skills in development.
+
 
  #### Key information for the site:
 
- * Project N is the winning entry in Shipley College's T level competition.
- * The winning entry was by Tobey.
- * The website is going to be developed over summer by Tobey and also Mohammed, who came second in the competition.
+ * Project Testrepo is a clas assignment for my Year 2 PDD class.
+ * This project will be worked on by me, Mohammed.
+
+.
 
 ### User Stories
 
@@ -22,7 +29,7 @@ TBC
 
 ### User Goals
 
-#### Client Goals:
+#### Project Goals:
 
 * The ability to view the website to get information on services provided.
 * To make the site understandable for first-time users and to make the purpose clear.
@@ -84,7 +91,7 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 
 ### Languages Used
 
- HTML and CSS were used for this project.
+ HTML, CSS and JavaScript were used for this site.
 
 ### Frameworks, Libraries & Programs Used
 
