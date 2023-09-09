@@ -203,31 +203,39 @@
     <!-- Core theme JS-->
     <!-- JavaScript to open and close the map popup -->
     <script async>
+                // Function to open the map modal
+function openMapPopup() {
     const mapPopup = document.querySelector('.map-popup');
-const dimmerOverlay = document.querySelector('.dimmer-overlay');
-const mainContent = document.querySelector('.main-content');
-const body = document.body;
+    const dimmerOverlay = document.querySelector('.dimmer-overlay');
+    const mainContent = document.querySelector('.main-content');
+    const body = document.body;
 
-function toggleMapPopup() {
-    if (mapPopup.style.display === 'none') {
-        mapPopup.style.display = 'block';
-        dimmerOverlay.style.display = 'block';
-        mainContent.classList.add('no-scroll-main');
-        body.classList.add('no-scroll');
-    } else {
-        mapPopup.style.display = 'none';
-        dimmerOverlay.style.display = 'none';
-        mainContent.classList.remove('no-scroll-main');
-        body.classList.remove('no-scroll');
-    }
+    mapPopup.style.display = 'block';
+    dimmerOverlay.style.display = 'block';
+    mainContent.classList.add('no-scroll-main'); // Disable scrolling on the main content
+    body.classList.add('no-scroll'); // Disable scrolling on the body
 }
 
+// Function to close the map modal
+function closeMapPopup() {
+    const mapPopup = document.querySelector('.map-popup');
+    const dimmerOverlay = document.querySelector('.dimmer-overlay');
+    const mainContent = document.querySelector('.main-content');
+    const body = document.body;
+
+    mapPopup.style.display = 'none';
+    dimmerOverlay.style.display = 'none';
+    mainContent.classList.remove('no-scroll-main'); // Enable scrolling on the main content
+    body.classList.remove('no-scroll'); // Enable scrolling on the body
+}
+
+// Add event listener to the close button
 const closeButton = document.querySelector('.close-button');
-closeButton.addEventListener('click', toggleMapPopup);
+closeButton.addEventListener('click', closeMapPopup);
 
+// Optional: Add event listener to the "Open Map" button
 const openMapButton = document.getElementById('openMapBtn');
-openMapButton.addEventListener('click', toggleMapPopup);
-
+openMapButton.addEventListener('click', openMapPopup);
     </script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
