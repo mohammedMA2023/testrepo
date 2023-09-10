@@ -101,7 +101,7 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 
 * GitHub - To save and store the files for the website.
 
-* Bootstrap v5.2 - a framework used for the website. Used when creating rows and columns. Also, the form element was almost entirely created using this framework, with the support of standard CSS3 code to override certain styles.
+* Bootstrap v5.2 - a framework used for the website. Used when creating rows and columns. Most text containers and divs on the page use Bootstrap. This entails styling of text colour, font and positioning. Also, the form element was almost entirely created using this framework, with the support of standard CSS3 code to override certain styles.
 
 * Font Awesome - For the iconography on the website.
 
