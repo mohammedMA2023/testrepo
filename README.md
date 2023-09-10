@@ -74,7 +74,12 @@ Wireframes were created for desktop view.
 
 ### Features
 
-TBC
+This website has a few features:
+* Viewing the games club location. The user can view the location of the games club (which is located in the Shipley College Exhibition Building). This works by bringing up a pop up after the button within the "Address" container is pressed. This will display a popup which contains an iframe. This iframe contains the location of the Exhibition Building. The user can then press "CLOSE" button.
+
+* The user has access to social media links. These links will redirect the user to the respective social media pages (YouTube, Instagram and Twitter).
+* Allowing the user to enter an email. The user can enter their email to sign up for a newsletter. There is no backend code to send emails to the user's entered email address. However, this can be implemented later.
+* Information. Perhaps this is not a feature, but the website does give information about the Games Club to all users. It does this in a clear and concise way by separating it into different sections which discuss different topics.
 
 ### Accessibility 
 
@@ -132,7 +137,11 @@ The W3C validator was used to validate the HTML and CSS pages.
 
 ### Fixed Bugs
 
-TBC
+I have fixed all known bugs for this site.
+
+There was an issue loading my scripts.js file. This was because I used the wrong path for the file. This file is used to change the look of the navigation bar based on where the user is on the page. The bug was causing this functionality to be removed. This issue no longer exists.
+
+Another issue was that the website was trying to retrieve a bootstrap resource using an incorrect link. This was causing more errors to appear in the console. I removed this from the HTML file, which did not change how the page looks. However, it stopped these errors.
 
 
 ### Test Cases
@@ -209,12 +218,14 @@ Clone the ShipleySteve.github.io repository:
 
 ### Background Images
 
-TBC
+* email.jpg (). This image was used in the background of the newsletter sign up form.
 
-
+* location.jpeg (https://1drv.ms/i/s!AkpC1RL9orDRyQ-J9XqxIu1vZUg8?e=zcjA1Z). This image was used as the background image of the top part of the website, the header. 
+* 
 
 - - -
 
 ## Acknowledgements
+
 
 TBC
