@@ -131,7 +131,156 @@ The W3C validator was used to validate the HTML and CSS pages.
 * [HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fshipleysteve.github.io%2F)
 * [CSS Validation](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fshipleysteve.github.io%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
+These are some issues that were found when I used the W3C Validator:
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
 
+From line 4, column 5; to line 4, column 28
+
+head>↩    <meta charset="utf-8" />↩    <
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 5, column 5; to line 5, column 92
+
+8" />↩    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />↩    <
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 6, column 5; to line 6, column 249
+
+o" />↩    <meta name="description" content="Welcome to the Games Club at Shipley College! Join us to experienc…ion, and Xbox. Engage in discussions about the best and favorite video games with fellow gamers." />↩    <
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 7, column 5; to line 7, column 37
+
+." />↩    <meta name="author" content="" />↩    <
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 9, column 5; to line 9, column 72
+
+itle>↩    <link rel="icon" type="image/x-icon" href="assets/controller.png" />↩    <
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 12, column 5; to line 12, column 89
+
+ts-->↩    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />↩    <
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 13, column 5; to line 13, column 146
+
+t" />↩    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />↩    <
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 17, column 5; to line 17, column 58
+
+p)-->↩    <link href="assets/css/styles.css" rel="stylesheet" />↩</hea
+
+Error: Bad value 100% for attribute width on element img: Expected a digit but saw % instead.
+
+From line 64, column 13; to line 64, column 127
+
+          <img width=100% height=auto class="img-fluid" src="assets/img/controller.jpg" alt="Image of an Xbox controller." />↩     
+
+Error: Bad value auto for attribute height on element img: Expected a digit but saw a instead.
+
+From line 64, column 13; to line 64, column 127
+
+          <img width=100% height=auto class="img-fluid" src="assets/img/controller.jpg" alt="Image of an Xbox controller." />↩     
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 64, column 13; to line 64, column 127
+
+          <img width=100% height=auto class="img-fluid" src="assets/img/controller.jpg" alt="Image of an Xbox controller." />↩     
+
+Error: Bad value 100% for attribute width on element img: Expected a digit but saw % instead.
+
+From line 75, column 48; to line 75, column 169
+
+col-lg-7"><img width=100% class="img-fluid mb-3 mb-lg-0" src="assets/img/gamingworld.jpg" alt="Image of different gaming worlds." /></div>
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 75, column 48; to line 75, column 169
+
+col-lg-7"><img width=100% class="img-fluid mb-3 mb-lg-0" src="assets/img/gamingworld.jpg" alt="Image of different gaming worlds." /></div>
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 85, column 39; to line 85, column 198
+
+col-lg-6"><img src="assets/img/gametogether.jpg" alt="Two people sitting together and playing video games using Xbox 360 controllers" style="width: 100%; height: 100%;"/></div>
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 123, column 46; to line 123, column 226
+
+ass="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter your email address..." aria-label="Enter your email address..." data-sb-validations="required,email" /></div>
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 151, column 29; to line 151, column 55
+
+          <hr class="my-4 mx-auto" />↩     
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 163, column 29; to line 163, column 55
+
+          <hr class="my-4 mx-auto" />↩     
+
+Error: Bad value mailto: enquiries@shipley.ac.uk for attribute href on element a: Illegal character in scheme data: space is not allowed.
+
+From line 164, column 74; to line 164, column 115
+
+ion-none"><a href="mailto: enquiries@shipley.ac.uk">Email 
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 173, column 29; to line 173, column 55
+
+          <hr class="my-4 mx-auto" />↩     
+
+Error: Bad value 100% for attribute width on element iframe: Expected a digit but saw % instead.
+
+From line 192, column 13; to line 192, column 446
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2354.3302160237336!2d-1.790938922…to" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></ifra
+
+Error: Bad value auto for attribute height on element iframe: Expected a digit but saw a instead.
+
+From line 192, column 13; to line 192, column 446
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2354.3302160237336!2d-1.790938922…to" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></ifra
+
+Error: Element script must not have attribute async unless attribute src is also specified or unless attribute type is specified with value module.
+
+From line 204, column 6; to line 204, column 19
+
+ -->↩     <script async>↩     
+
+Warning: Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools).
+
+From line 90, column 33; to line 90, column 72
+
+          <h1 class="text-white font-weight-bold">Discov
+
+Warning: Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools).
+
+From line 78, column 25; to line 78, column 64
+
+          <h1 class="text-black font-weight-bold">Level 
+
+Warning: Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools).
+
+From line 104, column 33; to line 104, column 55
+
+          <h1 class="text-white">Join O
 
 ### Fixed Bugs
 
@@ -141,7 +290,7 @@ There was an issue loading my scripts.js file. This was because I used the wrong
 
 Another issue was that the website was trying to retrieve a bootstrap resource using an incorrect link. This was causing more errors to appear in the console. I removed this from the HTML file, which did not change how the page looks. However, it stopped these errors.
 
-
+I fixed the issue with the illegal character on line 164. There was a space character after "mailto:". I removed the space.  
 ### Test Cases
 
 I have fully tested the website using Google Chrome, Safari, Microsoft Edge and Firefox on desktop (Comoputer details go here) and mobile (mobile device details here). 
