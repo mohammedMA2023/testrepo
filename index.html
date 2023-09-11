@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
     <!-- Latest Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.2.3/css/bootstrap.min.css">
+    
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="assets/css/styles.css" rel="stylesheet" />
 </head>
@@ -25,6 +25,7 @@
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto text-white font-weight-bold">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -36,6 +37,7 @@
     </nav>
     <!-- Masthead-->
     <header class="masthead">
+        <button onclick="darkMode()">Dark Mode</button>
         <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
             <div class="d-flex justify-content-center">
                 <div class="text-center">
@@ -201,8 +203,12 @@
     <!-- Bootstrap core JS-->
     <!-- Core theme JS-->
     <!-- JavaScript to open and close the map popup -->
-     <script async>
+<script async>
                 // Function to open the map modal
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
 function openMapPopup() {
     const mapPopup = document.querySelector('.map-popup');
     const dimmerOverlay = document.querySelector('.dimmer-overlay');
