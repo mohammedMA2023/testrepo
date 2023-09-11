@@ -10,10 +10,10 @@
 
 ### Initial Discussion
 
- The goal of the project N is to create a website for a local employer. Nicola would like a website to provide information on her services . The goal of this website is to give  our users a clear understanding of what  service are available and what she can do to help clients. My goal for this project was to make a responsive, professional and accessible website for a chosen club.
+ The goal of the project N is to create a website for a local club. This club would like a website to provide information on their activities . The goal of this website is to give  our users a clear understanding of what activities are available and what they can do to take part in them. My goal for this project was to make a responsive, professional and accessible website for a chosen club.
 I chose to make my site about a games club held in Shipley College.
 The site was then going to be hosted somewhere (github pages for now) and possibly given some backend code.
-This would help develop my skills in development.
+This would help develop my skills.
 
 
  #### Key information for the site:
@@ -31,25 +31,25 @@ TBC
 
 #### Project Goals:
 
-* The ability to view the website to get information on services provided.
+* The ability to view the website to get information on what the Games Club does.
 * To make the site understandable for first-time users and to make the purpose clear.
 * To provide clear and easy-to-notice contact information, including address.
 * To make the content easy to read and accessible to all visitors.
 
 #### First-Time Visitor Goals:
 
-* To find out what Project N is.
+* To find out what Project Games Club is.
 * To be able to easily navigate through the website on various devices.
 * To visit our social media pages.
 
 #### Returning Visitor Goals:
 
-* Fill out the contact form and get in touch with us regarding doing business together.
-* To start collaboration and answer any questions potential clients may have.
+* Fill out the contact form and sign up for the newsletter.
+* To start answering any questions users may have.
 
 #### Frequent Visitor Goals:
 
-* Our frequent visitors should be our business partners.
+* Our frequent visitors should be those who to check out the latest about the Games Club.
 
 - - -
 
@@ -121,9 +121,7 @@ It was ensured that the website is accessible and as user-friendly as possible. 
 
 Testing progressed at every stage of this project. This ensured that most issues were fixed before the website was finished. Chrome DevTools were utilised when building the website to help with troubleshooting as the website transformed. 
 
-The following issues were raised during my project meeting with the client:
-* issue 1
-* issue 2
+
 
 
 ### W3C Validator
@@ -146,21 +144,22 @@ Another issue was that the website was trying to retrieve a bootstrap resource u
 
 ### Test Cases
 
-I have fully tested the website using Google Chrome and Mozilla Firefox on desktop (Comoputer details go here) and mobile (mobile device details here). 
+I have fully tested the website using Google Chrome, Safari, Microsoft Edge and Firefox on desktop (Comoputer details go here) and mobile (mobile device details here). 
 
 It was ensured that through the testing process content was responsive using the Google Developer Tools. 
 
 #### Home page
 
-* I began by clicking on the "home" link and the logo to see if the homepage loads correctly.
+Once I was on the home page (https://mohammedma2023.github.io/testrepo/)
 * Next, I scrolled down to see if all of the images and all content loaded correctly.
 * I ensured that from the Home page - all navbar links lead to the right page.
 * Lastly, I checked if the social links in the footer element work correctly as well.
 * Form
-  * I clicked on the "Submit" button - Error message appeared "Please fill in this field" - As expected.
-  * Next, I filled in the required field (email) - The same error message should appear indicating that the "Your name" field must be completed before submitting the form.
-  * The same process was repeated for the Your Email, Subject and Message fields.
-  * When all fields are completed, the "Submit" button should display a "thank you" message without any errors on the form.
+  * I clicked on the "SUBSCRIBE NOW" button - nothing happened. This is because the button is disabled unless a valid email has been entered.
+  * Next, I filled in the email field with a valid field (124403@shipley.ac.uk). This message appeared when I clicked on "SUBSCRIBE NOW" button: "Thank you for subscribing!
+Stay updated on the latest gaming news and events.", indicating the form works.
+  
+  # A valid email needs to contain both a "@" and "." symbols. It also seems that it would work as long as you something between and around those symbols, so the email doesn't truly need to be valid.
 
 ### Supported Screens and Browsers
 
@@ -186,7 +185,7 @@ It was ensured that through the testing process content was responsive using the
 GitHub Pages was used to deploy the live website. Instructions:
 
 1. Log in (or sign up) to Github.
-2. Find the repository for this project, "ShipleySteve.github.io".
+2. Find the repository for this project, "mohammedma2023.github.io/testrepo/".
 3. Click on the Settings link.
 4. Click on the Pages link in the left-hand side navigation bar.
 5. In the Source section, choose main from the drop-down select branch menu. Select Root from the drop-down select folder menu.
@@ -199,15 +198,15 @@ GitHub Pages was used to deploy the live website. Instructions:
 Fork the Project N repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, ShipleySteve.github.io.
+2. Go to the repository for this project, mohammedma2023.github.io/testrepo/.
 3. Click the Fork button in the top right corner.
 
-#### How to Clone
+\#### How to Clone
 
-Clone the ShipleySteve.github.io repository:
+Clone the mohammedma2023.github.io/testrepo/ repository:
 
 1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, ShipleySteve.github.io.
+2. Go to the repository for this project, mohammedma2023.github.io/testrepo/.
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
@@ -215,6 +214,7 @@ Clone the ShipleySteve.github.io repository:
 - - -
 
 ## Credits
+* Main Developer: Mohammed Bin Aamir. Keep in mind that I did not develop the Startbootstrap Greyscale template, I just used it.
 
 ### Background Images
 
@@ -228,4 +228,15 @@ Clone the ShipleySteve.github.io repository:
 ## Acknowledgements
 
 
-TBC
+People:
+*Tutor: Steve Mullarky
+Libraries/Frameworks/Tools
+* Bootstrap 5
+* Fontawsome
+* Favicon
+* GitHub DeskTop
+* Github
+* amiresponsive
+* W3C validator 
+* DevTools
+* Template used: Startbootstrap greyscale (https://startbootstrap.com/theme/grayscale)
