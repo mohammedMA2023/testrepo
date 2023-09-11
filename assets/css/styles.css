@@ -92,6 +92,7 @@
 .dark-mode {
   background-color: black;
   color: white;
+
 }
 
 
@@ -4240,8 +4241,9 @@ textarea.form-control-lg {
   --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
   --bs-card-cap-color: ;
   --bs-card-height: ;
+  --bs-card-bg: white;
   --bs-card-color: ;
-  --bs-card-bg: #fff;
+  
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
@@ -4250,7 +4252,7 @@ textarea.form-control-lg {
   min-width: 0;
   height: var(--bs-card-height);
   word-wrap: break-word;
-  background-color: var(--bs-card-bg);
+  
   background-clip: border-box;
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
@@ -11177,8 +11179,9 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
-}
+    padding: 10rem 0;
+  
+}  
 .projects-section .featured-text {
   padding: 2rem;
 }
@@ -11223,8 +11226,10 @@ body {
 .contact-section .card {
   border: 0;
   border-bottom: 0.25rem solid #64a19d;
+
 }
 .contact-section .card h4, .contact-section .card .h4 {
+  
   font-size: 0.8rem;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
@@ -11237,9 +11242,11 @@ body {
   width: 3rem;
 }
 .contact-section .social {
+  background-color: black;
   margin-top: 5rem;
 }
 .contact-section .social a {
+
   text-align: center;
   height: 3rem;
   width: 3rem;

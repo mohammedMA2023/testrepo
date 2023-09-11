@@ -37,11 +37,12 @@
     </nav>
     <!-- Masthead-->
     <header class="masthead">
-        <button onclick="darkMode()">Dark Mode</button>
+        
         <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
             <div class="d-flex justify-content-center">
                 <div class="text-center">
                     <h1 class="mx-auto my-0 text-uppercase font-weight-bold">Welcome to the Games Club!</h1>
+                    <button id="darkModeToggle">Dark Mode</button>
                     <h2 class="text-white-50 mx-auto mt-2 mb-5 font-weight-bold" style="font-size:170%">Experience the thrill of gaming across different platforms. Join us and explore a world of entertainment and build new friendships!.</h2>
                     <a class="btn btn-primary" href="#about">Get Started</a>
                 </div>
@@ -70,15 +71,15 @@
         </div>
     </section>
     <!-- Projects-->
-    <section class="projects-section bg-light" id="projects">
+    <section class="projects-section" id="projects">
         <div class="container px-4 px-lg-5">
             <!-- Featured Project Row-->
             <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                 <div class="col-xl-8 col-lg-7"><img width=100% class="img-fluid mb-3 mb-lg-0" src="assets/img/gamingworld.jpg" alt="Image of different gaming worlds." /></div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="featured-text text-center text-lg-left">
-                        <h1 class="text-black font-weight-bold">Level Up Together</h1>
-                        <p class="text-black" style="font-size:22px;">At the Games Club, we believe in the power of community. Join us to embark on epic quests, conquer virtual worlds, and make lasting friendships.</p>
+                        <h1 class=" font-weight-bold">Level Up Together</h1>
+                        <p  style="font-size:22px;">At the Games Club, we believe in the power of community. Join us to embark on epic quests, conquer virtual worlds, and make lasting friendships.</p>
                     </div>
                 </div>
             </div>
@@ -142,23 +143,23 @@
         </div>
     </section>
     <!-- Contact-->
-    <section class="contact-section bg-black">
+    <section class="contact-section">
         <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
+            <div class="row gx-4 gx-lg-5  ">
+                <div class="col-md-4 mb-3 mb-md-0  ">
+                    <div  class="card py-4 h-100" id="toggleAddress">
                         <div class="card-body text-center">
                             <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                             <h4 class="text-uppercase m-0">Address</h4>
                             <hr class="my-4 mx-auto" />
-                            <div class="text-black font-weight-bold" style="font-size:17px"><br>Shipley College, Exhibition Rd, Saltaire, Shipley BD18 3JW</div>
+                            <div><br>Shipley College, Exhibition Rd, Saltaire, Shipley BD18 3JW</div>
                             <button class="btn btn-primary mt-3" id="openMapBtn">View Location</button>
 
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
+                    <div class="card py-4 h-100" id="toggleEmail">
                         <div class="card-body text-center">
                             <i class="fas fa-envelope text-primary mb-2"></i>
                             <h4 class="text-uppercase m-0">Email</h4>
@@ -168,7 +169,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
+                    <div class="card py-4 h-100" id="toggleNumber">
                         <div class="card-body text-center">
                             <i class="fas fa-mobile-alt text-primary mb-2"></i>
                             <h4 class="text-uppercase m-0">Phone</h4>
@@ -204,11 +205,31 @@
     <!-- Core theme JS-->
     <!-- JavaScript to open and close the map popup -->
 <script async>
-                // Function to open the map modal
+     var cardsToToggle = document.querySelectorAll(".card-to-toggle");
+
+    cardsToToggle.forEach(function(card) {
+        card.classList.toggle("dark-card");
+    });
+                
 function darkMode() {
-  var element = document.body;
+  
+  var element = document.getElementById("projects");
+  var address = document.getElementById("toggleAddress");
+  var email = document.getElementById("toggleEmail");
+  var number = document.getElementById("toggleNumber");
+
   element.classList.toggle("dark-mode");
+  email.classList.toggle("dark-mode");
+  address.classList.toggle("dark-mode");
+  number.classList.toggle("dark-mode");
+  
+  
+  alert("works");
+  
 }
+        
+var darkModeBtn = document.getElementById("darkModeToggle");
+darkModeBtn.addEventListener('click',darkMode);
 function openMapPopup() {
     const mapPopup = document.querySelector('.map-popup');
     const dimmerOverlay = document.querySelector('.dimmer-overlay');
@@ -238,7 +259,6 @@ function closeMapPopup() {
 const closeButton = document.querySelector('.close-button');
 closeButton.addEventListener('click', closeMapPopup);
 
-// Optional: Add event listener to the "Open Map" button
 const openMapButton = document.getElementById('openMapBtn');
 openMapButton.addEventListener('click', openMapPopup);
     </script>
