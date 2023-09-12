@@ -205,11 +205,7 @@
     <!-- Core theme JS-->
     <!-- JavaScript to open and close the map popup -->
 <script async>
-     var cardsToToggle = document.querySelectorAll(".card-to-toggle");
-
-    cardsToToggle.forEach(function(card) {
-        card.classList.toggle("dark-card");
-    });
+     
                 
 function darkMode() {
   
@@ -218,12 +214,18 @@ function darkMode() {
   var email = document.getElementById("toggleEmail");
   var number = document.getElementById("toggleNumber");
 
-  element.classList.toggle("dark-mode");
-  email.classList.toggle("dark-mode");
-  address.classList.toggle("dark-mode");
-  number.classList.toggle("dark-mode");
-  
-  
+  //element.classList.toggle("dark-mode");
+  //email.classList.toggle("dark-mode");
+  //address.classList.toggle("dark-mode");
+  //number.classList.toggle("dark-mode");
+  //var el2 = document.body
+  el2 = document.body;
+  el2.classList.toggle('dark-mode');
+  var cardsToToggle = document.querySelectorAll(".card");
+
+    cardsToToggle.forEach(function(card) {
+        card.classList.toggle("dark-mode");
+    });
   alert("works");
   
 }
