@@ -43,6 +43,7 @@
                 <div class="text-center">
                     <h1 class="mx-auto my-0 text-uppercase font-weight-bold">Welcome to the Games Club!</h1>
                     <button id="darkModeToggle">Dark Mode</button>
+                    <button onclick="doit()">View Time</button>
                     <h2 class="text-white-50 mx-auto mt-2 mb-5 font-weight-bold" style="font-size:170%">Experience the thrill of gaming across different platforms. Join us and explore a world of entertainment and build new friendships!.</h2>
                     <a class="btn btn-primary" href="#about">Get Started</a>
                 </div>
@@ -120,11 +121,13 @@
                 <div class="col-md-10 col-lg-8 mx-auto text-center">
                     <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                     <h2 class="text-white mb-5">Stay Connected</h2>
-                    <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <form class="form-signup" id="contactForm" >
                         <!-- Email address input-->
                         <div class="row input-group-newsletter">
                             <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter your email address..." aria-label="Enter your email address..." data-sb-validations="required,email" /></div>
-                            <div class="col-auto"><button class="btn btn-primary" id="submitButton" type="submit">Subscribe Now</button></div>
+                            
+                            <div class="col-auto"><button onclick="submitForm()" class="btn btn-primary" id="submitButton" type="submit">Subscribe Now</button></div>
+                        <p id="formMessage">Enter your email address to stay in touch!</p>
                         </div>
                         <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email address is required.</div>
                         <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Please enter a valid email address.</div>
@@ -138,6 +141,7 @@
                         <!-- Submit error message-->
                         <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
                     </form>
+                    <div class="col-auto"><button onclick="submitForm()" class="btn btn-primary" id="submitButton" >Submit</button></div>
                 </div>
             </div>
         </div>
@@ -205,10 +209,24 @@
     <!-- Core theme JS-->
     <!-- JavaScript to open and close the map popup -->
 <script async>
+    function submitForm(){
+        var email = document.getElementById("emailAddress")
+        
+        var formMessage = document.getElementById('formMessage');
+        formMessage.innerHTML = "You entered: " + email.value + ". Thank you we will keep you updated!";
+
+
+
+
+    }
+    
      
                 
 function darkMode() {
-  
+  var start = new Date().getTime();
+
+
+
   var element = document.getElementById("projects");
   var address = document.getElementById("toggleAddress");
   var email = document.getElementById("toggleEmail");
@@ -263,6 +281,12 @@ closeButton.addEventListener('click', closeMapPopup);
 
 const openMapButton = document.getElementById('openMapBtn');
 openMapButton.addEventListener('click', openMapPopup);
+    var start = new Date().getTime();
+function doit() {
+    var end = new Date().getTime();
+    var time = (end - start) / 1000;
+    alert('Execution time: ' + time.toFixed(1) + ' seconds.');  
+}
     </script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
